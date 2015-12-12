@@ -34,15 +34,15 @@ We provide tools for end user to package the application into a docker image wit
       --------------       ----------------       ---------------
                                  ^
                                  ^
-                                 | disk attched to PC
+                                 | cable or network
                                  |
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-            ^  disk holds the docker images   ^
+            ^  the docker images storage      ^
             ^                                 ^
             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Disk attached to a host is accessed by the docker engine.
+Storage mounted by the host is accessed by the docker engine.
 Users queries the application list from the docker engine.
 User can request docker engine to start any application from the docker images
 
@@ -55,8 +55,8 @@ A typical docker images consists of the following layers
          Base image
       -----------------
 
-Each image runs as a self-contained enviroment. Application draws into the Windows system's framebuffer. VNC server then exports the framebuffer
-to VNC client.
+Each image runs as a self-contained enviroment. Application draws into the Windows system's framebuffer.
+VNC server then exports the framebuffer to VNC client.
 
 
 #### Storage consideration
@@ -73,7 +73,7 @@ mount and access the disk images.
 
 #### Auto run
 
-When disk inserted, a script on disk will auto run. The script will trigger docker engine on host to run
+When storage is attached, a script on it will auto run. The script will trigger docker engine on host to run
 and load the images from the disk images.
 
 #### Advanced topics
