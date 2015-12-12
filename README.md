@@ -59,7 +59,7 @@ Each image runs as a self-contained enviroment. Application draws into the Windo
 to VNC client.
 
 
-#### storage considertion
+#### Storage consideration
 
 Docker images contains some special files like device files which requires the disk fs to be ext4-like.
 Unfortunately, ext4 is not natively supported by MAC or windows.
@@ -71,17 +71,17 @@ boot2docker doesn't support usb device redirection currently.
 Second solution is to redirect the usb disk into a vmware linux vm. In this vm, nfs export the disk out. Then in boot2docker
 mount and access the disk images.
 
-#### auto run
+#### Auto run
 
 When disk inserted, a script on disk will auto run. The script will trigger docker engine on host to run
 and load the images from the disk images.
 
-#### advanced topics
+#### Advanced topics
 Implement usb device redirection for boot2docker Linux
 
-#### application launcher
+#### Application launcher
 
-#### application package tool
+#### Application package tool
 
 
 
