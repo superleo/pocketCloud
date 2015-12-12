@@ -5,7 +5,7 @@ container-based app publish in a pocket
 
 ##### Introduction
 
-Most people use docker to implement micro service which runns in the cloud to serve user request from web.
+Most people use docker to implement micro service which runs in the cloud to serve user request from web.
 These requests are typically http request, sql request etc.
 
 However, few notice people are overwhelmed by application management problem in real life.
